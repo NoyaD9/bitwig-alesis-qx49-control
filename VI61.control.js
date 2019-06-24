@@ -1,18 +1,18 @@
 loadAPI(2);
 host.setShouldFailOnDeprecatedUse(true);
 
-host.defineController("Alesis", "QX49", "1.0", "6E55D132-1846-4C64-9F97-48041F2D9B96");
+host.defineController("Alesis", "VI61", "1.0", "6E55D132-1846-4C64-9F97-48041F2D9B96");
 host.defineMidiPorts(1, 1);
-host.addDeviceNameBasedDiscoveryPair(["QX49"], ["QX49"]);
+host.addDeviceNameBasedDiscoveryPair(["VI61"], ["VI61"]);
 
 var LOWEST_CC = 1;
 var HIGHEST_CC = 113;
-var STOP_CC = 114;
-var PLAY_CC = 115;
-var RECORD_CC = 116;
+var STOP_CC = 118;
+var PLAY_CC = 119;
+var RECORD_CC = 114;
 var FAST_FORWARD_CC = 117;
 var REWIND_CC = 118;
-var LOOP_CC = 119;
+var LOOP_CC = 115;
 
 function init() {
    host.getMidiInPort(0).setMidiCallback(onMidi);
